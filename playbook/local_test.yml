@@ -2,5 +2,8 @@
 # file: webservers.yml
 - hosts: localhost
   become: false
+  vars:
+    alpha: "pbvars"
+    bravo: "bpvars"
   roles:
-    - /opt/ansible/debug
+      - /Users/nmarks/Projects/arole-debug
